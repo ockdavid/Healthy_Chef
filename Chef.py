@@ -14,11 +14,6 @@ st.set_page_config(
     }
 )
 
-image1 = Image.open('Pics/logo_pepsico_positive.jpg')
-image2 = Image.open('Pics/logo.png')
-col1, col2 = st.columns(2)
-col1.image(image1)
-col2.image(image2)
 
 st.title('Healthy Chef 👨‍🍳')
 
@@ -33,8 +28,3 @@ st.subheader('Parte del propósito de Positive Choices implica aprovechar nuestr
 st.subheader('Sabemos que nuestros productos te acompañan siempre, pero también queremos que te alimentes saludablemente. 💙')
 
 st.subheader('¿Estás listo para comer saludable? 🚀')
-
-if st.button('¡Estoy listo!'):
-    image3 = Image.open('Pics/pic_bar.png')
-    st.markdown('👈 Haz click en la sección Chef en el menú lateral izquierdo')
-    st.image(image3)
