@@ -17,8 +17,13 @@ st.set_page_config(
 
 st.title('Healthy Chef 👨‍🍳')
 
-st.subheader('PepsiCo Positive es una estrategia de sostenibilidad y responsabilidad corporativa de la empresa\
-            para impulsar un impacto positivo en la sociedad y el medio ambiente.🌍')
+st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más sano!')
+
+option = st.selectbox(
+    '¿Qué deseas hacer?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', option)
 
 st.subheader('Uno de nuestros pilares es :blue[Positive Choices]')
 
