@@ -21,7 +21,7 @@ st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más s
 
 option = st.selectbox(
     '¿Qué deseas hacer?',
-    ('Email', 'Home phone', 'Mobile phone'))
+    ('Recetas recomendadas', 'Home phone', 'Mobile phone'))
 
 st.write('You selected:', option)
 
