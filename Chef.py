@@ -54,4 +54,5 @@ if st.button('Ver recetas recomendadas'):
     
     with open("receta_1.txt", "r") as archivo_mensajes:
         contenido = archivo_mensajes.read()
-        st.write(contenido)
+    for linea in contenido.splitlines():
+        st.write(linea)
