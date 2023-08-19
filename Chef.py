@@ -35,12 +35,12 @@ st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más s
 st.markdown("Esta aplicación te genera una **receta saludable** a partir de los ingredientes que tengas o desees utilizar.")
 st.markdown("Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior 👇 las recetas recomendadas 💯.")
 st.markdown("En la siguiente campo de entrada de texto **_enumera_** los **_ingredientes_** que deseas que la inteligencia \
-            artificial utilice para tu nueva receta a preparar.")
+            artificial utilice para tu nueva receta a preparar y presiona Enter.")
 
 text_input = st.text_input('Ingredientes')
 
-prompt = f"La variable {text_input} debería tener una lista de ingredientes con las cuales vas a realizar \
-            una receta saludable y la imprimirás, incluyendo los pasos a realizar"
+prompt = f"{text_input} es una lista de ingredientes con las cuales vas a realizar \
+            una receta saludable incluyendo la preparación, utiliza un lenguaje amigable para comunicar la receta"
 
 if text_input:
         response = get_completion(prompt)
