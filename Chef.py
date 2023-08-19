@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import openai
+from recetas import receta_1
 
 st.set_page_config(
     page_title="HealthyChef App",
@@ -31,28 +32,25 @@ st.title('Healthy Chef 👨‍🍳')
 
 st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más sano!')
 
-"""st.markdown('Esta aplicación te genera una **receta saludable** a partir de los ingredientes que tengas o desees utilizar.\n')
-st.markdown('Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior 👇 las recetas recomendadas. 💯\n ')
-st.markdown('En la siguiente campo de entrada de texto enumera los ingredientes que deseas que la inteligencia \
-            artificial utilice para tu nueva receta a preparar.')"""
+st.markdown("Esta aplicación te genera una **receta saludable** a partir de los ingredientes que tengas o desees utilizar.")
+st.markdown("Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior 👇 las recetas recomendadas 💯.")
+st.markdown("En la siguiente campo de entrada de texto **_enumera_** los **_ingredientes_** que deseas que la inteligencia \
+            artificial utilice para tu nueva receta a preparar.")
 
-texto = "Esta aplicación te genera una **receta saludable** a partir de los ingredientes que tengas o desees utilizar.\n \
-            Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior las recetas recomendadas 💯.\n \
-            En la siguiente campo de entrada de texto **_enumera_** los **_ingredientes_** que deseas que la inteligencia \
-            artificial utilice para tu nueva receta a preparar."
+text_input = st.text_input('Ingredientes', 'Escribe aquí...')
 
-st.markdown(texto)
-
-
-st.markdown('Streamlit is **_really_ cool**.')
-st.markdown("This text is :red[colored red], and this is **:blue[colored]** and bold.")
-st.markdown(":green[$\sqrt{x^2+y^2}=1$] is a Pythagorean identity. :pencil:")
-
-title = st.text_input('Ingredientes', 'Escribe aquí...')
-
+if text_input:
+        prompt = f"La variable {text_input} debería tener una lista de ingredientes con las cuales vas a realizar \
+            una receta saludable. Si no tiene una lista de ingredientes y tiene algo que no tiene sentido puedes imprimir\
+            un mensaje diciendo que no se ha ingresado los ingredientes correctamente"
+        response = get_completion(prompt)
+        st.write(response)
 
 if st.button('Ver recetas recomendadas'):
     option = st.selectbox(
     '¿Qué receta deseas ver?',
     ('Ensalada de Quinua y Aguacate con Salmón a la Parrilla', 'Batido de Avena, Plátano y Fresas', \
      'Lentejas con Espinacas y Tomates'))
+    
+    if option:
+         receta_1()
