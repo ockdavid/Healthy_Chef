@@ -51,4 +51,7 @@ if st.button('Ver recetas recomendadas'):
     '¿Qué receta deseas ver?',
     ('Ensalada de Quinua y Aguacate con Salmón a la Parrilla', 'Batido de Avena, Plátano y Fresas', \
      'Lentejas con Espinacas y Tomates'))
-    st.write(recetas.receta_1)
+    
+    with open("receta_1.txt", "r") as archivo_mensajes:
+        contenido = archivo_mensajes.read()
+        st.write(contenido)
