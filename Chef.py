@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import openai
-from recetas import receta_1
+import recetas
 
 st.set_page_config(
     page_title="HealthyChef App",
@@ -51,6 +51,4 @@ if st.button('Ver recetas recomendadas'):
     '¿Qué receta deseas ver?',
     ('Ensalada de Quinua y Aguacate con Salmón a la Parrilla', 'Batido de Avena, Plátano y Fresas', \
      'Lentejas con Espinacas y Tomates'))
-    
-    if option:
-         receta_1()
+    st.write(recetas.receta_1)
