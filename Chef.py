@@ -20,8 +20,9 @@ st.title('Healthy Chef 👨‍🍳')
 st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más sano!')
 
 option = st.selectbox(
-    '¿Qué deseas hacer?',
-    ('Recetas recomendadas', 'Home phone', 'Mobile phone'))
+    '¿Qué deseas ver?',
+    ('Recetas recomendadas', 'Preparar recetas', '+-
+     '))
 
 st.write('You selected:', option)
 
