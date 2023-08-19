@@ -8,6 +8,7 @@ receta_1 ="""Ingredientes:
 Jugo de limón
 Aceite de oliva virgen extra
 Sal y pimienta al gusto
+
 Instrucciones:
 
 1. Mezcla la quinua cocida con la espinaca fresca en un tazón grande.
