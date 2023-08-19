@@ -31,13 +31,18 @@ st.title('Healthy Chef 👨‍🍳')
 
 st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más sano!')
 
-option = st.selectbox(
-    '¿Qué deseas ver/hacer?',
-    ('Recetas recomendadas', 'Preparar recetas'))
+st.caption('This is a string that explains something above.')
+st.caption('A caption with _italics_ :blue[colors] and emojis :sunglasses:')
 
-st.write('You selected:', option)
+st.markdown('Streamlit is **_really_ cool**.')
+st.markdown("This text is :red[colored red], and this is **:blue[colored]** and bold.")
+st.markdown(":green[$\sqrt{x^2+y^2}=1$] is a Pythagorean identity. :pencil:")
+
+title = st.text_input('Ingredientes', 'Escribe aquí...')
+
 
 if st.button('Ver recetas recomendadas'):
-    response = get_completion(prompt)
-    lista = response
-    st.write(response)
+    option = st.selectbox(
+    '¿Qué receta deseas ver?',
+    ('Ensalada de Quinua y Aguacate con Salmón a la Parrilla', 'Batido de Avena, Plátano y Fresas', \
+     'Lentejas con Espinacas y Tomates'))
