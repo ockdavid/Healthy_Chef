@@ -31,8 +31,16 @@ st.title('Healthy Chef 👨‍🍳')
 
 st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más sano!')
 
-st.caption('This is a string that explains something above.')
-st.caption('A caption with _italics_ :blue[colors] and emojis :sunglasses:')
+st.markdown('Esta aplicación te genera una receta saludable a partir de los ingredientes que tengas o desees utilizar')
+st.markdown('Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior las recetas recomendadas')
+st.markdown('En la siguiente campo de entrada de texto enumera los ingredientes que deseas que la inteligencia \
+            artificial utilice para tu nueva receta a preparar')
+
+st.markdown('Esta aplicación te genera una receta saludable a partir de los ingredientes que tengas o desees utilizar \
+            Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior las recetas recomendadas \
+            En la siguiente campo de entrada de texto enumera los ingredientes que deseas que la inteligencia \
+            artificial utilice para tu nueva receta a preparar')
+
 
 st.markdown('Streamlit is **_really_ cool**.')
 st.markdown("This text is :red[colored red], and this is **:blue[colored]** and bold.")
