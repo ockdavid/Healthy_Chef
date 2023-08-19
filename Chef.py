@@ -31,14 +31,14 @@ st.title('Healthy Chef 👨‍🍳')
 
 st.subheader('Tu mejor aplicación con Inteligencia Artificial para comer más sano!')
 
-"""st.markdown('Esta aplicación te genera una receta** saludable** a partir de los ingredientes que tengas o desees utilizar.\n')
+"""st.markdown('Esta aplicación te genera una **receta saludable** a partir de los ingredientes que tengas o desees utilizar.\n')
 st.markdown('Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior 👇 las recetas recomendadas. 💯\n ')
 st.markdown('En la siguiente campo de entrada de texto enumera los ingredientes que deseas que la inteligencia \
             artificial utilice para tu nueva receta a preparar.')"""
 
-st.markdown('Esta aplicación te genera una receta** saludable** a partir de los ingredientes que tengas o desees utilizar.\n \
+st.markdown('Esta aplicación te genera una **receta saludable** a partir de los ingredientes que tengas o desees utilizar.\n \
             Si no deseas ingresar ningún ingrediente, puedes ver en la parte inferior las recetas recomendadas 💯.\n \
-            En la siguiente campo de entrada de texto _enumera_ los _ingredientes_ que deseas que la inteligencia \
+            En la siguiente campo de entrada de texto **_enumera_** los **_ingredientes_** que deseas que la inteligencia \
             artificial utilice para tu nueva receta a preparar.')
 
 
