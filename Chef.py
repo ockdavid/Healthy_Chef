@@ -37,12 +37,12 @@ st.markdown("Si no deseas ingresar ningún ingrediente, puedes ver en la parte i
 st.markdown("En la siguiente campo de entrada de texto **_enumera_** los **_ingredientes_** que deseas que la inteligencia \
             artificial utilice para tu nueva receta a preparar.")
 
-text_input = st.text_input('Ingredientes', 'Escribe aquí...')
+text_input = st.text_input('Ingredientes')
+
+prompt = f"La variable {text_input} debería tener una lista de ingredientes con las cuales vas a realizar \
+            una receta saludable y la imprimirás, incluyendo los pasos a realizar"
 
 if text_input:
-        prompt = f"La variable {text_input} debería tener una lista de ingredientes con las cuales vas a realizar \
-            una receta saludable. Si no tiene una lista de ingredientes y tiene algo que no tiene sentido puedes imprimir\
-            un mensaje diciendo que no se ha ingresado los ingredientes correctamente"
         response = get_completion(prompt)
         st.write(response)
 
