@@ -52,7 +52,8 @@ if st.button('Ver recetas recomendadas'):
     ('Ensalada de Quinua y Aguacate con Salmón a la Parrilla', 'Batido de Avena, Plátano y Fresas', \
      'Lentejas con Espinacas y Tomates'))
     
-    with open("receta_1.txt", "r") as archivo_mensajes:
-        contenido = archivo_mensajes.read()
-    for linea in contenido.splitlines():
-        st.write(linea)
+    if option == "Lentejas con Espinacas y Tomates":
+        with open("receta_1.txt", "r") as archivo_mensajes:
+            contenido = archivo_mensajes.read()
+        for linea in contenido.splitlines():
+            st.write(linea)
