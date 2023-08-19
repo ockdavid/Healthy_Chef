@@ -10,8 +10,8 @@ Aceite de oliva virgen extra
 Sal y pimienta al gusto
 Instrucciones:
 
-Mezcla la quinua cocida con la espinaca fresca en un tazón grande.
-Agrega los cubos de aguacate y las almendras picadas.
-Coloca el filete de salmón a la parrilla encima de la ensalada.
-Rocía con jugo de limón, aceite de oliva, sal y pimienta al gusto.
-Sirve inmediatamente."""
+1. Mezcla la quinua cocida con la espinaca fresca en un tazón grande.
+2. Agrega los cubos de aguacate y las almendras picadas.
+3. Coloca el filete de salmón a la parrilla encima de la ensalada.
+4. Rocía con jugo de limón, aceite de oliva, sal y pimienta al gusto.
+5. Sirve inmediatamente."""
