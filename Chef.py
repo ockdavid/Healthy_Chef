@@ -53,15 +53,22 @@ if text_input:
         response = get_completion(prompt)
         st.write(response)
 
+if "visibility" not in st.session_state:
+    st.session_state.visibility = "hidden"
+
+def click_receta():
+     if st.session_state.receta_recogida:
+          st.session_state.type=st.session_state.receta_recogida
+
 if st.button('Ver recetas recomendadas'):
-    option = st.selectbox(
-    '¿Qué receta deseas ver?',
-    ("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
-     "Lentejas con Espinacas y Tomates"))
+    st.session_state.visibility = "visible"
     
-    if option == "Lentejas con Espinacas y Tomates":
-        st.write('lentejas con espinacas')
-        with open("receta_1.txt", "r") as archivo_mensajes:
-            contenido = archivo_mensajes.read()
-        for linea in contenido.splitlines():
-            st.write(linea)
+option = st.selectbox(
+'¿Qué receta deseas ver?',
+("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
+    "Lentejas con Espinacas y Tomates"), on_change=click_receta, label_visibility=st.session_state.visibility,\
+        key='receta_escogida')
+    
+   # if st.session_state.type == "Lentejas con Espinacas y Tomates":
+    #    st.write('lentejas con espinacas')
+        
