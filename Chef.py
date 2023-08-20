@@ -69,7 +69,7 @@ if st.button('Ver recetas recomendadas'):
 
 option = st.selectbox(
     '¿Qué receta deseas ver?',
-    ("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
+    (" ","Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
     "Lentejas con Espinacas y Tomates", "Salmón al Horno con Costra de Almendras", \
     "Tazón de Acai con Frutas y Granola", "Pollo a la Parrilla con Salsa de Aguacate y Limón", \
     "Ensalada de Espinacas y Fresas con Vinagreta de Yogur", "Batido de Espinacas, Plátano y Mantequilla de Almendras", \
