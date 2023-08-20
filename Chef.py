@@ -16,6 +16,13 @@ st.set_page_config(
     }
 )
 
+hide_menu_style = """
+                <style>
+                footer {visibility: hidden; }
+                </style>
+                """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 # openai.api_key  = os.getenv('OPENAI_API_KEY')
 openai.api_key = st.secrets["api_secret"]
 
@@ -49,10 +56,11 @@ if text_input:
 if st.button('Ver recetas recomendadas'):
     option = st.selectbox(
     '¿Qué receta deseas ver?',
-    ('Ensalada de Quinua y Aguacate con Salmón a la Parrilla', 'Batido de Avena, Plátano y Fresas', \
-     'Lentejas con Espinacas y Tomates'))
+    ("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
+     "Lentejas con Espinacas y Tomates"))
     
     if option == "Lentejas con Espinacas y Tomates":
+        st.write('lentejas con espinacas')
         with open("receta_1.txt", "r") as archivo_mensajes:
             contenido = archivo_mensajes.read()
         for linea in contenido.splitlines():
