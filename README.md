@@ -1,6 +1,5 @@
 # HealthyChef App 👨‍🍳
 
-![HealthyChef Logo](link_a_tu_imagen.png)
 
 **HealthyChef App** es una aplicación que utiliza inteligencia artificial para generar recetas saludables a partir de los ingredientes que tengas o desees utilizar.
 
@@ -12,8 +11,7 @@
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](captura_de_pantalla_1.png)
-![Captura de Pantalla 2](captura_de_pantalla_2.png)
+![Captura de Pantalla 1](screenshots/foto1.png.png)
 
 ## Uso
 
@@ -26,9 +24,4 @@
 - [Streamlit](https://streamlit.io/) - Framework para la creación de aplicaciones web interactivas con Python.
 - [OpenAI GPT-3](https://beta.openai.com/) - Motor de lenguaje natural para generación de texto.
 
-## Requisitos
 
-Asegúrate de tener las siguientes bibliotecas instaladas para ejecutar la aplicación:
-
-```bash
-pip install streamlit pillow openai
