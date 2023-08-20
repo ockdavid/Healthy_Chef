@@ -63,6 +63,8 @@ def click_receta():
 if st.button('Ver recetas recomendadas'):
     st.session_state.visibility = "visible"
     
+st.write(st.session_state.visibility)
+
 option = st.selectbox(
 '¿Qué receta deseas ver?',
 ("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
