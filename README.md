@@ -11,7 +11,7 @@
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](screenshots/foto1.png)
+![Captura de Pantalla 1](screenshots/foto_1.png)
 
 ## Uso
 
