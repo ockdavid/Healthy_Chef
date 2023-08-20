@@ -112,9 +112,13 @@ receta_5 = """
 Ingredientes:
 
 • Puré de acai (congelado o en polvo)
+
 • Plátano
+
 • Fresas o bayas mixtas
+
 • Granola casera
+
 • Miel (opcional)
 
 Instrucciones:
