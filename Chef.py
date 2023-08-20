@@ -59,22 +59,43 @@ if "visibility" not in st.session_state:
     st.session_state['type'] = ''
 
 def click_receta():
-     if st.session_state.receta_recogida:
-          st.session_state.type=st.session_state.receta_recogida
+     if st.session_state.receta_escogida:
+          st.session_state.type=st.session_state.receta_escogida
 
 st.divider()
 
 if st.button('Ver recetas recomendadas'):
     st.session_state.disabled = False
-    
-#st.write(st.session_state.disabled)
 
 option = st.selectbox(
-'¿Qué receta deseas ver?',
-("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
-    "Lentejas con Espinacas y Tomates"), disabled=st.session_state.disabled,\
+    '¿Qué receta deseas ver?',
+    ("Ensalada de Quinua y Aguacate con Salmón a la Parrilla", "Batido de Avena, Plátano y Fresas", \
+    "Lentejas con Espinacas y Tomates", "Salmón al Horno con Costra de Almendras", \
+    "Tazón de Acai con Frutas y Granola", "Pollo a la Parrilla con Salsa de Aguacate y Limón", \
+    "Ensalada de Espinacas y Fresas con Vinagreta de Yogur", "Batido de Espinacas, Plátano y Mantequilla de Almendras", \
+    "Quinua con Verduras al Curry", "Postre de Yogur y Fresas con Miel y Nueces"), on_change=click_receta, disabled=st.session_state.disabled,\
         key='receta_escogida')
-    
-if st.session_state.type == "Lentejas con Espinacas y Tomates":
-     st.write('lentejas con espinacas')
+
+st.write(st.session_state.type)
+
+if st.session_state.type == "Ensalada de Quinua y Aguacate con Salmón a la Parrilla":
+     st.write(recetas.receta_1)
+elif st.session_state.type == "Batido de Avena, Plátano y Fresas":
+     st.write(recetas.receta_2)
+elif st.session_state.type == "Lentejas con Espinacas y Tomates":
+     st.write(recetas.receta_3)
+elif st.session_state.type == "Salmón al Horno con Costra de Almendras":
+     st.write(recetas.receta_4)
+elif st.session_state.type == "Tazón de Acai con Frutas y Granola":
+     st.write(recetas.receta_5)
+elif st.session_state.type == "Pollo a la Parrilla con Salsa de Aguacate y Limón":
+     st.write(recetas.receta_6)
+elif st.session_state.type == "Ensalada de Espinacas y Fresas con Vinagreta de Yogur":
+     st.write(recetas.receta_7)
+elif st.session_state.type == "Batido de Espinacas, Plátano y Mantequilla de Almendras":
+     st.write(recetas.receta_8)
+elif st.session_state.type == "Quinua con Verduras al Curry":
+     st.write(recetas.receta_9)
+elif st.session_state.type == "Postre de Yogur y Fresas con Miel y Nueces":
+     st.write(recetas.receta_10)
         
